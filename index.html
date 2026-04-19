@@ -46,9 +46,7 @@
                     <p>Pioneering research at the intersection of virtual reality and neuroscience, utilizing HP Omnicept and Muse S Athena to create responsive, adaptive virtual environments.</p>
                     <a href="#research" class="btn">Explore Research</a>
                 </div>
-                <div class="hero-visual">
-                    <div class="vr-headset"></div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -59,17 +57,17 @@
             <h2 class="section-title">About The Research</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Architecture significantly impacts human well-being, emotions, and cognitive states, as supported by multiple architectural theories. Biophilic Design and Attention Restoration Theory suggest that natural elements in spaces can reduce stress and enhance focus. Prospect-Refuge Theory emphasizes the need for balance between openness and safety, while Neuroarchitecture and Evidence-Based Design link spatial configurations with measurable brain and physiological responses.
+                    <p>This project develops a multimodal physiological analysis framework to objectively evaluate human cognitive and emotional states within controlled Virtual Reality (VR) environments. By integrating EEG (brain activity), fNIRS (hemodynamic response), and PPG-derived PRV (autonomic response), the system captures complementary neural, vascular, and cardiac signals in real time.
 
-By using Virtual Reality (VR) combined with EEG, fNIRS, and PPG, this project provides a scientific framework to objectively evaluate how architectural variables—such as geometry, color, openness, and biophilic elements—affect human relaxation, engagement, and cognitive performance. This approach bridges traditional design theories with quantifiable biomedical evidence for wellness-oriented architectural design.
+Two contrasting VR conditions—cognitive workload (chess task) and relaxation (guided meditation)—were designed to induce distinct mental states. Signal preprocessing, feature extraction (e.g., EEG band power, frontal asymmetry, PRV metrics), and machine learning models were applied to identify consistent physiological patterns across modalities.
 
-Architecture has a profound impact on human wellness, emotions, and cognitive states, supported by more than 15 architectural theories that link spatial design with human well-being. These theories emphasize factors like nature integration, spatial balance, cognitive comfort, and stress recovery. By integrating Virtual Reality (VR) with EEG, fNIRS, and PPG, this project aims to provide quantifiable evidence to validate these theories and guide the creation of spaces that promote mental, emotional, and physiological well-being..</p>
-                    <p>Our work sits at the intersection of neuroscience, human-computer interaction, and immersive technology, with applications ranging from therapeutic interventions to advanced training simulations and entertainment experiences.</p>
+The results demonstrate clear multimodal separation between high cognitive load and relaxed states, validating the framework as a reliable tool for objective mental state assessment. This approach provides a data-driven foundation for applications in neuroadaptive systems, cognitive monitoring, and human-centered environment evaluation..</p>
+                    <p>This framework can be extended to evaluate architectural design variables through measurable neurophysiological responses</p>
                     
                     <div class="tech-stack">
                         <div class="tech-item">
                             <i class="fas fa-vr-cardboard"></i>
-                            <h4>HP Omnicept</h4>
+                            <h4>Meta Quest 3</h4>
                         </div>
                         <div class="tech-item">
                             <i class="fas fa-brain"></i>
@@ -121,8 +119,8 @@ Architecture has a profound impact on human wellness, emotions, and cognitive st
                 </div>
                 <div class="research-card">
                     <h3>Graph Demonstarion</h3>
-                    <p>In VR research, EEG is integrated with signals like HRV, fNIRS, and EDA to link brain activity with physiological responses. Graphs such as heatmaps and time-series plots show how EEG bands (alpha, beta, etc.) align with changes in heart rate or stress levels, revealing patterns of immersion and cognitive load. This multi-sensor fusion improves accuracy in tracking user states compared to EEG alone..</p>
-                    <a href="https://www.mdpi.com/1424-8220/22/9/3133" class="btn" target="_blank">Figure</a>
+                    <p>Implemented signal-level analysis of EEG band power, frontal alpha asymmetry, PRV metrics, and fNIRS hemodynamics. Demonstrated strong separation between high workload and relaxed states through consistent multimodal biomarkers. </p>
+                    <a href="https://drive.google.com/drive/folders/1HKPluOa-6OaHMgJn02atvx3e81LGT8cM" class="btn" target="_blank">Figure</a>
                 </div>
             </div>
         </div>
@@ -136,7 +134,7 @@ Architecture has a profound impact on human wellness, emotions, and cognitive st
                 <div class="io-item">
                     <div class="io-text">
                         <h3>Input Systems</h3>
-                        <p>The research utilizes multi-modal input sources including eye tracking, heart rate variability, EEG brainwave data, and pupillometry from the HP Omnicept system, combined with neural activity data from the Muse S Athena headset.</p>
+                        <p>The research utilizes multi-modal input sources including eye tracking, pulse rate variability, EEG brainwave data, and pupillometry from the Meta Quest 3 system, combined with neural activity data from the Muse S Athena headset.</p>
                         <p>This comprehensive sensor fusion approach allows for a holistic understanding of user states during immersive VR experiences, capturing both conscious and subconscious responses to virtual stimuli.</p>
                     </div>
                     <div class="io-visual">
@@ -146,11 +144,44 @@ Architecture has a profound impact on human wellness, emotions, and cognitive st
                 <div class="io-item">
                     <div class="io-text">
                         <h3>Output & Adaptive Systems</h3>
-                        <p>The system generates responsive VR environments that adapt in real-time to user states. Outputs include dynamic difficulty adjustment, content personalization, environmental modifications, and emotional response logging.</p>
-                        <p>Results demonstrate significant improvements in user engagement, learning outcomes, and emotional connection to virtual experiences compared to static VR environments.</p>
+                        <p>The system outputs objective assessments of cognitive and emotional states by analyzing multimodal physiological signals, including EEG, fNIRS, and PRV. It identifies clear distinctions between workload and relaxation conditions while providing interpretable insights into neural, hemodynamic, and autonomic responses, enabling reliable session-level evaluation</p>
+                        <p>The framework can be extended to enable real-time adaptive VR environments based on detected user states.</p>
                     </div>
                     <div class="io-visual">
                         <div class="visual-placeholder">Adaptive Output System</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Minor Report & Dataset Access Section -->
+    <section id="results-dataset">
+        <div class="container">
+            <h2 class="section-title">Minor Report & Dataset Access</h2>
+            <div class="io-content">
+                <p style="margin-bottom: 2rem; text-align: center;">The experimental results are supported by collected physiological datasets, and access is provided for transparency and reproducibility.</p>
+                
+                <div class="io-item">
+                    <div class="io-text">
+                        <h3>Minor Report</h3>
+                        <p>Neuro-Driven Insights for Cognitive State Assessment in VR</p>
+                        <a href="https://drive.google.com/drive/folders/1wfhldxYywniQb64IL1qhBnoIl1niFHx2" class="btn" target="_blank">Access Report</a>
+                    </div>
+                </div>
+                <div class="io-item">
+                    <div class="io-text">
+                        <h3>EEG Data (Muse Headband)</h3>
+                        <p>EEG recordings used for band power and FAA analysis.</p>
+                        <a href="https://drive.google.com/drive/folders/13TXPPOVJuLl6QVX9RGxbfquVrzHHwSaw" class="btn" target="_blank">Access Dataset</a>
+                    </div>
+                </div>
+
+                <div class="io-item">
+                    <div class="io-text">
+                        <h3>SpO₂ & Pulse Data</h3>
+                        <p>Oxygen saturation and pulse rate signals used for PRV analysis.</p>
+                        <a href="https://drive.google.com/drive/folders/1vA6Tnx1pzbSCYm0iRyenPk8OmV6YyTuX" class="btn" target="_blank">Access Dataset</a>
                     </div>
                 </div>
             </div>

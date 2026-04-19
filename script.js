@@ -1,4 +1,4 @@
-  // Initialize animations with GSAP ScrollTrigger
+// Initialize animations with GSAP ScrollTrigger
         gsap.registerPlugin(ScrollTrigger);
         
         // Animate sections on scroll
@@ -40,6 +40,7 @@
         // Particle background animation
         document.addEventListener('DOMContentLoaded', function() {
             const canvas = document.getElementById('particle-canvas');
+            if (!canvas) return;
             const ctx = canvas.getContext('2d');
             
             canvas.width = window.innerWidth;
@@ -86,6 +87,7 @@
             }
             
             function init() {
+                particlesArray = [];
                 for (let i = 0; i < numberOfParticles; i++) {
                     particlesArray.push(new Particle());
                 }
@@ -123,7 +125,6 @@
             window.addEventListener('resize', function() {
                 canvas.width = window.innerWidth;
                 canvas.height = window.innerHeight;
-                particlesArray = [];
                 init();
             });
             
@@ -148,20 +149,24 @@
             // Mobile menu toggle
             const menuBtn = document.querySelector('.menu-btn');
             const navLinks = document.querySelector('.nav-links');
-            
-            menuBtn.addEventListener('click', () => {
-                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            });
+
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
             
             // Update navigation on scroll
             window.addEventListener('scroll', () => {
                 const header = document.querySelector('header');
-                if (window.scrollY > 50) {
-                    header.style.padding = '10px 0';
-                    header.style.backgroundColor = 'rgba(13, 15, 27, 0.95)';
-                } else {
-                    header.style.padding = '15px 0';
-                    header.style.backgroundColor = 'rgba(13, 15, 27, 0.8)';
+                if (header) {
+                    if (window.scrollY > 50) {
+                        header.style.padding = '10px 0';
+                        header.style.backgroundColor = 'rgba(13, 15, 27, 0.95)';
+                    } else {
+                        header.style.padding = '15px 0';
+                        header.style.backgroundColor = 'rgba(13, 15, 27, 0.8)';
+                    }
                 }
             });
         });
